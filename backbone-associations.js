@@ -466,7 +466,7 @@
                         var key = relation.key,
                             remoteKey = relation.remoteKey,
                             attr = this.attributes[key],
-                            serialize = !relation.transient;
+                            serialize = !relation.isTransient;
 
                         aJson = attr && attr.toJSON ? attr.toJSON(options) : attr;
 
